@@ -1,0 +1,194 @@
+/* ------------ FONTS ------------ */
+
+@font-face {
+    font-family: 'Kalam';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Kalam Light'), local('Kalam-Light'), url(https://fonts.gstatic.com/s/kalam/v9/YA9Qr0Wd4kDdMtD6GjLMkiQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Kalam';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Kalam'), local('Kalam-Regular'), url(https://fonts.gstatic.com/s/kalam/v9/YA9dr0Wd4kDdMthROCc.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Kalam';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Kalam Bold'), local('Kalam-Bold'), url(https://fonts.gstatic.com/s/kalam/v9/YA9Qr0Wd4kDdMtDqHTLMkiQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v12/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v12/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ------------ MASTER STYLES ------------ */
+
+body {
+    font-family: 'Kalam', cursive;
+}
+
+.plain-font {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.tilly-color {
+    color: rgb(8, 172, 248);
+}
+
+.tails-color {
+    color: #F4993C;
+}
+
+.opaque-half {
+    opacity: 0.5;
+}
+
+/* NAVBAR */
+
+button.navbar-toggler, button.navbar-toggler:active, button.navbar-toggler:focus {
+    outline: none !important;
+}
+
+ul.navbar-nav li.nav-item a.nav-link {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+ul.navbar-nav li.nav-item a.nav-link:hover {
+    color: rgb(8, 172, 248);
+    text-decoration: underline;
+}
+
+div.socials a:hover, span.socials a:hover {
+    text-decoration: none;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(8, 172, 248);
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(48,189,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+ul.navbar-nav li.nav-item a.nav-active {
+    font-size: 1.1rem;
+    color: rgb(8, 172, 248);
+}
+
+/* FOOTER + SOCIALS */
+
+.social-icons:hover, .nav-social-icons:hover {
+    transform: scale(1.1);
+}
+
+/* ------------ HOME PAGE ------------ */
+
+.btn-custom {
+    background-color: #F4993C;
+    color: white;
+}
+
+/* ------------ ABOUT PAGE ------------ */
+
+.paw-title {
+    width: 100px;
+    height: auto;
+    transform: rotate(350deg);
+}
+
+/* ------------ MEDIA QUERIES ------------ */
+
+.display-5 {
+    font-size: 3.0rem;
+    font-weight: 300;
+}
+
+.display-6 {
+    font-size: 1.7rem;
+    font-weight: 300;
+    max-width: 400px;
+}
+
+.social-icons {
+    width: 85px;
+    height: 85px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .display-6 {
+        font-size: 1.4rem;
+    }
+    .social-icons {
+        width: 75px;
+        height: 75px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .display-6 {
+        font-size: 1.7rem;
+    }
+    .display-5 {
+        font-size: 3.0rem;
+    }
+    .display-4 {
+        font-size: 3.2rem;
+    }
+    .h4 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .display-5 {
+        font-size: 2.6rem;
+    }
+    .display-4 {
+        font-size: 2.8rem;
+    }
+    .paw-title {
+        width: 75px;
+    }
+    .h4 {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .display-6 {
+        font-size: 1.3rem;
+    }
+    .display-5 {
+        font-size: 2.0rem;
+    }
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    .paw-title {
+        width: 60px;
+    }
+    .social-icons {
+        width: 50px;
+        height: 50px;
+    }
+}
